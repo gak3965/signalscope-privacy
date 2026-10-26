@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SignalScope — Privacy Policy</title>
+<meta name="description" content="Privacy policy for the SignalScope signal scanner app.">
+<style>
+  :root {
+    --bg: #ffffff; --fg: #1a2128; --muted: #5b6672; --card: #f6f8fa;
+    --line: #e2e8f0; --accent: #0f9c8c; --accent-weak: #e6f7f4;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0b0f14; --fg: #e6edf3; --muted: #8b97a5; --card: #151b23;
+      --line: #222c38; --accent: #2dd4bf; --accent-weak: #10312e;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--fg);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 0 20px 80px; }
+  header {
+    padding: 48px 0 28px; border-bottom: 1px solid var(--line); margin-bottom: 28px;
+  }
+  .brand { display: flex; align-items: center; gap: 14px; }
+  .mark {
+    width: 40px; height: 40px; border-radius: 10px; flex: none;
+    border: 2px solid var(--accent); display: grid; place-items: center;
+    background: var(--accent-weak);
+  }
+  .mark::before {
+    content: ""; width: 9px; height: 9px; border-radius: 50%; background: var(--accent);
+    box-shadow: 0 0 0 5px color-mix(in srgb, var(--accent) 25%, transparent);
+  }
+  h1 { font-size: 1.6rem; margin: 0; letter-spacing: -0.01em; }
+  .sub { color: var(--muted); font-size: 0.9rem; margin-top: 4px; }
+  h2 {
+    font-size: 1.15rem; margin: 36px 0 12px; padding-top: 8px;
+  }
+  h3 { font-size: 1rem; margin: 22px 0 8px; color: var(--accent); }
+  p, li { color: var(--fg); }
+  a { color: var(--accent); }
+  .muted { color: var(--muted); }
+  table {
+    border-collapse: collapse; width: 100%; margin: 14px 0; font-size: 0.92rem;
+    display: block; overflow-x: auto;
+  }
+  th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  thead th { background: var(--card); font-weight: 600; }
+  .note {
+    background: var(--card); border: 1px solid var(--line); border-left: 3px solid var(--accent);
+    border-radius: 8px; padding: 12px 16px; margin: 16px 0;
+  }
+  ul { padding-left: 22px; }
+  li { margin: 6px 0; }
+  footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--line); color: var(--muted); font-size: 0.9rem; }
+  code { background: var(--card); padding: 1px 5px; border-radius: 4px; font-size: 0.9em; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="brand">
+      <div class="mark"></div>
+      <div>
+        <h1>SignalScope — Privacy Policy</h1>
+        <div class="sub">Last updated: 26 October 2026</div>
+      </div>
+    </div>
+  </header>
+
+  <h2>Who we are</h2>
+  <p>SignalScope (“the app”, “we”, “us”) is operated by the SignalScope developer.
+     For any privacy question, contact
+     <a href="mailto:Gfunk3965@gmail.com">Gfunk3965@gmail.com</a>.</p>
+
+  <h2>What the app does</h2>
+  <p>SignalScope scans the device’s surroundings for wireless signals that the
+     operating system makes available — WiFi networks, Bluetooth LE devices, and
+     cellular connection details — and displays their public metadata (names,
+     signal strength, channel, band, identifiers) so you can analyze your local
+     radio environment.</p>
+  <p>The app <strong>does not</strong> decode, record, or access the <em>content</em>
+     of any transmission. It reads only the presence and technical metadata the OS
+     exposes to apps.</p>
+
+  <h2>What data the app accesses</h2>
+  <table>
+    <thead><tr><th>Data</th><th>Why</th><th>Leaves your device?</th></tr></thead>
+    <tbody>
+      <tr><td>Nearby WiFi network info (SSID, BSSID, signal, channel)</td><td>Core scanning feature</td><td><strong>No</strong></td></tr>
+      <tr><td>Nearby Bluetooth LE device info (name, ID, signal)</td><td>Core scanning feature</td><td><strong>No</strong></td></tr>
+      <tr><td>Cellular connection info (carrier, band, signal, cell ID)</td><td>Core scanning feature</td><td><strong>No</strong></td></tr>
+      <tr><td>Approximate / precise location</td><td>Required by Android and iOS to return WiFi and nearby-signal results — an OS gate, not a choice</td><td><strong>No</strong></td></tr>
+    </tbody>
+  </table>
+
+  <h3>Location permission — important</h3>
+  <p>Android and iOS require location permission before an app may read WiFi or
+     Bluetooth scan results. SignalScope requests location <strong>solely</strong>
+     to enable scanning. The app does <strong>not</strong> track, store, or
+     transmit your location, and does not use it for advertising or analytics.</p>
+
+  <h2>How data is used and stored</h2>
+  <ul>
+    <li>All scan data, history, favorites and survey data are processed and stored <strong>on your device</strong> only.</li>
+    <li>Saved scans and tracked devices persist locally until you delete them in the app.</li>
+    <li>We do <strong>not</strong> sell your data and do <strong>not</strong> share it with third parties.</li>
+  </ul>
+
+  <h3>Outbound requests you initiate</h3>
+  <p>A few optional tools make outbound internet requests only when you tap them.
+     They send no personal data beyond what any web request includes:</p>
+  <ul>
+    <li><strong>Public IP / ISP lookup</strong> uses ipinfo.io to report your public IP and ISP.</li>
+    <li><strong>Speed test</strong> downloads from Cloudflare’s speed endpoint to measure throughput.</li>
+    <li><strong>Map tiles</strong> for the coverage heatmap are loaded from OpenStreetMap.</li>
+    <li><strong>IP geolocation</strong> (optional, in the packet analyzer) sends public IP addresses from an opened capture to ip-api.com to show their country/city.</li>
+  </ul>
+  <p class="muted">Exports (CSV/JSON/PDF/KML/GeoJSON) are handed to your device’s
+     own share sheet; where they go from there is your choice.</p>
+
+  <h2>Data we collect about you</h2>
+  <div class="note">We collect <strong>no</strong> personal data and use
+     <strong>no</strong> third-party analytics, advertising, or crash-reporting
+     SDKs. Nothing is transmitted to us — we operate no servers that receive your
+     data.</div>
+
+  <h2>Permissions summary</h2>
+  <ul>
+    <li><strong>Location (fine)</strong> — required by the OS for WiFi/Bluetooth scanning, and to tag coverage surveys.</li>
+    <li><strong>Nearby devices / Bluetooth</strong> — to detect Bluetooth LE devices and trackers.</li>
+    <li><strong>Phone state</strong> — to read cellular network type and signal (Android).</li>
+    <li><strong>Camera</strong> — only for the AR signal finder’s viewfinder overlay.</li>
+    <li><strong>NFC</strong> — only when you start an NFC tag scan.</li>
+    <li><strong>Notifications</strong> — to alert you about tracked devices and connection changes.</li>
+  </ul>
+  <p>You can revoke any permission in your device settings; the related scanning
+     feature will stop working.</p>
+
+  <h2>Children</h2>
+  <p>SignalScope is not directed to children under 13 (or the minimum age in your
+     jurisdiction) and does not knowingly collect their data.</p>
+
+  <h2>Changes</h2>
+  <p>We may update this policy; the “Last updated” date will change and, for
+     material changes, we will notify you in-app.</p>
+
+  <h2>Contact</h2>
+  <p>SignalScope — <a href="mailto:Gfunk3965@gmail.com">Gfunk3965@gmail.com</a></p>
+
+  <footer>© 2026 SignalScope. This page is the app’s official privacy policy.</footer>
+</div>
+</body>
+</html>
